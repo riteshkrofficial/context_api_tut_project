@@ -1,0 +1,49 @@
+                              WHAT WE WANT TO STUDY FIRST
+
+In this we will know about why we started using  context api before that we were using the prop drilling method why 
+that method(prop drilling) is not efficient and not used as optimized way.
+
+
+
+                            LETS KNOW ABOUT PROP DRILLLING METHOD FIRST 
+
+Prop drilling => Prop drilling in React refers to the practice of passing data down through multiple layers of components
+  in order to reach a component that needs access to that data.  
+Ex- Suppose we want to pass a data in Card component whose location (Dashboard->rightbar->upper->card)  so what we do in this 
+first we will pass the data inside dashboard to the required place using the hirerchy
+    ex of prop drilling method->(        <Dashboard  title ="chai" />
+                                          <Rightbar   title ="chai"/>
+                                             <Upper  title ="chai"/> 
+                                             <Card   title ="chai"/>       )           
+So it is considered as an inefficient practice as passing the data in that component where it was not needed so another way 
+come that is an optimizec way of passing the data in react is "context API"(context api is purely used in react)
+
+Actually the prop drilling method was not only react problem but other library also faced this same problem like vue.js etc..
+
+
+
+
+
+Context API =>
+The Context API allows you to pass data through the component tree without having to pass props down manually at every level.
+Here's why the Context API is used and its main features:
+Avoids Prop Drilling: In React applications, data often needs to be passed down through multiple levels of nested components.
+This can lead to a pattern called "prop drilling," where intermediate components simply pass props down to their children without 
+actually using the props themselves. Context API helps avoid this by allowing data to be accessed by any component within the tree
+ without explicitly passing the props through every level.
+
+
+
+
+Redux ->Its work is state management that is the data passes here and there it allows that work in  an orgainized way. 
+
+
+
+
+
+
+
+
+
+
+
